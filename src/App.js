@@ -16,8 +16,6 @@ class App extends React.Component {
         );
     }
     componentDidMount() {
-        // this.props.init(10);
-        // return;
         let input = prompt('Enter board length: ');
         var length = Number.parseInt(input);
         if (!Number.isNaN(length)) {

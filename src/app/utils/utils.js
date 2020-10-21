@@ -53,4 +53,3 @@ function closestToCenter(locations, boardLength) {
 function distance(locationA, locationB) {
     return (locationB.col - locationA.col) ** 2 + (locationB.row - locationA.row) ** 2;
 }
-console.log(generateLocations(8));
