@@ -1,58 +1,52 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import { connect } from 'react-redux';
+import { init } from './app/actions/actions';
+import Panel from './app/components/Panel';
+import Board from './app/components/Board';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        let { initialized, length } = this.props;
+        return (
+            <div className="App">
+                {initialized ? <Board length={length} /> : <div />}
+                <Panel />
+            </div>
+        );
+    }
+    componentDidMount() {
+        // this.props.init(10);
+        // return;
+        let input = prompt('Enter board length: ');
+        var length = Number.parseInt(input);
+        if (!Number.isNaN(length)) {
+            if (length < 3) {
+                alert('Length too small');
+                window.location.reload();
+            } else if (length > 20) {
+                alert('Length too big');
+                window.location.reload();
+            } else {
+                this.props.init(length);
+            } 
+        } else {
+            alert('Enter a valid number.');
+            window.location.reload();
+        }
+    }
+}
+const mapStateToProps = state => {
+    let { initialized, length } = state.board;
+    return {
+        initialized,
+        length
+    };
+}
+const mapDispatchToProps = dispatch => {
+    return {
+        init: boardLength => dispatch(init(boardLength))
+    }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
