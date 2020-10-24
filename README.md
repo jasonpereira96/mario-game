@@ -1,6 +1,6 @@
 # Mario Game
 
-App deployed at http://jasonpereira96.github.io/mario-game 
+App deployed at http://jasonpereira96.github.io/mario-game/
 
 Visit to play!
 
