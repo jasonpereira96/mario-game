@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mario-game/static/css/main.b6fd0eab.chunk.css",
+    "main.js": "/mario-game/static/js/main.ff7924d5.chunk.js",
+    "main.js.map": "/mario-game/static/js/main.ff7924d5.chunk.js.map",
+    "runtime-main.js": "/mario-game/static/js/runtime-main.7295afe5.js",
+    "runtime-main.js.map": "/mario-game/static/js/runtime-main.7295afe5.js.map",
+    "static/js/2.d5555656.chunk.js": "/mario-game/static/js/2.d5555656.chunk.js",
+    "static/js/2.d5555656.chunk.js.map": "/mario-game/static/js/2.d5555656.chunk.js.map",
+    "index.html": "/mario-game/index.html",
+    "precache-manifest.bd2ad9bca67593c6c74b2b5d7006697e.js": "/mario-game/precache-manifest.bd2ad9bca67593c6c74b2b5d7006697e.js",
+    "service-worker.js": "/mario-game/service-worker.js",
+    "static/css/main.b6fd0eab.chunk.css.map": "/mario-game/static/css/main.b6fd0eab.chunk.css.map",
+    "static/js/2.d5555656.chunk.js.LICENSE.txt": "/mario-game/static/js/2.d5555656.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/mario-game/static/media/mushroom.7dc6876e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7295afe5.js",
+    "static/js/2.d5555656.chunk.js",
+    "static/css/main.b6fd0eab.chunk.css",
+    "static/js/main.ff7924d5.chunk.js"
+  ]
+}

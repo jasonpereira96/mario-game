@@ -1,0 +1,2 @@
+body,html{background-color:beige}.App{flex-direction:column}.App,.row{display:flex}.row{flex:1 1;flex-direction:row}.square{border:2px solid #000;flex:1 1;min-height:40px;max-width:40px;background-color:#add8e6;display:inline-block}.player{background-image:url(/mario-game/static/media/mario.252ff07a.svg)}.mushroom{background-image:url(/mario-game/static/media/mushroom.7dc6876e.svg)}#panel{background-color:beige;font-family:"Courier New",Courier,monospace}#game-over{color:red}
+/*# sourceMappingURL=main.b6fd0eab.chunk.css.map */
