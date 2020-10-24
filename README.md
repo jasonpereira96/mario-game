@@ -6,6 +6,7 @@ Visit to play!
 
 A simple game built with React and Redux.
 
+![Mario Game](https://github.com/jasonpereira96/mario-game/blob/main/images/mario.png "Mario Game")
 
 
 
